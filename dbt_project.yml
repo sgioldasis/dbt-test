@@ -1,4 +1,3 @@
-# Change the name here
 name: 'dbt_test_project'
 version: '1.0.0'
 config-version: 2
@@ -17,7 +16,10 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+# ADD THIS BLOCK TO FIX THE WARNING
+flags:
+  use_materialization_v2: true
+
 models:
-  # IMPORTANT: You must also change this key to match the new name above
   dbt_test_project:
     +materialized: table
