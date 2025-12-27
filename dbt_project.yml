@@ -16,9 +16,9 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-# ADD THIS BLOCK TO FIX THE WARNING
 flags:
   use_materialization_v2: true
+  use_managed_iceberg: true   # <--- ADD THIS LINE
 
 models:
   dbt_test_project:
