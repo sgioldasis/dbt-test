@@ -1,0 +1,3 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.3.3          # latest 1.x that allows dbt-core 2.0
